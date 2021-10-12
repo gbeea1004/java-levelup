@@ -1,0 +1,18 @@
+package calculator;
+
+import java.util.Scanner;
+
+public class Application {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("첫 번째 숫자를 입력하세요.");
+        int a = scanner.nextInt();
+        System.out.println("두 번째 숫자를 입력하세요.");
+        int b = scanner.nextInt();
+
+        int sum = a + b;
+        System.out.println("입력하신 숫자의 합은 " +  sum + " 입니다.");
+    }
+}
