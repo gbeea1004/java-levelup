@@ -8,11 +8,11 @@ public class Application {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("첫 번째 숫자를 입력하세요.");
-        int a = scanner.nextInt();
+        int a = Integer.parseInt(scanner.nextLine());
         System.out.println("두 번째 숫자를 입력하세요.");
-        int b = scanner.nextInt();
+        int b = Integer.parseInt(scanner.nextLine());
 
-        int sum = a + b;
-        System.out.println("입력하신 숫자의 합은 " +  sum + " 입니다.");
+        Calculator calculator = new Calculator();
+        calculator.calculate(scanner, a, b);
     }
 }
