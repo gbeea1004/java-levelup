@@ -9,7 +9,7 @@ class CalculatorTest {
 
 
     @Test
-    void plusTest() {
+    void plusTestπ() {
         int resurt = calculator.plus(1, 2);
         minusTest();
         assertEquals(3, resurt);
